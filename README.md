@@ -1,26 +1,36 @@
 # 3D Rubik's Cube AI Coach
 
-An interactive 3D Rubik's Cube with a built-in AI coach that helps users solve the cube step by step.
+An interactive 3D Rubik's Cube with a solver-backed AI coach that helps users solve the cube step by step.
 
-The cube can be rotated and manipulated directly, scrambled, solved, and reset. The solver generates the move sequence, while Gemini is used to explain the current step and answer questions about the solve.
+The cube can be manipulated directly, scrambled, solved, and reset. Solution steps can also be played back on the 3D cube, so users can actually see each move being performed.
 
 ## Live Demo
 
-[Try the Rubik's Cube AI Coach](https://rubix-cube-ai-coach.netlify.app/)
+🔗 [Try the Rubik's Cube AI Coach](https://rubix-cube-ai-coach.netlify.app/)
+
+## Screenshots
+
+### AI Coach
+
+<img width="2048" height="1272" alt="image" src="https://github.com/user-attachments/assets/bccf6177-4193-4dc8-90c2-9be905a051ee" />
+
+### 3D Cube
+
+<img width="2048" height="1070" alt="image" src="https://github.com/user-attachments/assets/7c3d45ff-9873-4d69-8178-53804d882a47" />
 
 ## Features
 
 - Interactive 3D Rubik's Cube
-- Scramble, solve, undo and reset controls
+- Scramble, solve, undo and reset
 - Step-by-step solution playback
 - Animated cube moves
 - AI Coach powered by Google Gemini
-- Learn mode for beginner-friendly guidance
-- Fastest mode for quicker solutions
-- Ask questions about the current step
-- Solver-backed hints when Gemini is unavailable
+- Beginner-friendly Learn mode
+- Fastest solving mode
+- Ask questions about the current solving step
+- Solver-backed hints when AI is unavailable
 - Move counter and solve timer
-- Responsive layout
+- Responsive interface
 
 ## Tech Stack
 
@@ -35,9 +45,7 @@ The cube can be rotated and manipulated directly, scrambled, solved, and reset. 
 
 The cube maintains its own state while the solver generates the moves required to reach the solved state.
 
-When a solution is available, each move can be played back directly on the 3D cube. The AI Coach sits on top of this system and explains the steps in a more understandable way.
-
-For example:
+Each solution move can then be played directly on the 3D cube. The cube updates its internal state while the corresponding layer is animated visually.
 
 ```text
 Cube State
@@ -48,4 +56,4 @@ Solution Moves
     ↓
 3D Move Animation
     ↓
-Updated Cube State
+Updated Cube State<img width="2048" height="1272" alt="Screenshot 2026-09-17 at 11 18 14 AM" src="https://github.com/user-attachments/assets/2514c260-bbab-428b-bb1f-db02bd1fc877" />
