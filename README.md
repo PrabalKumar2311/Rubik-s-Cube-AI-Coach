@@ -6,7 +6,7 @@ The cube can be rotated and manipulated directly, scrambled, solved, and reset. 
 
 ## Live Demo
 
-[Try the Rubik's Cube AI Coach]([YOUR_LIVE_LINK](https://rubix-cube-ai-coach.netlify.app))
+[Try the Rubik's Cube AI Coach]((https://rubix-cube-ai-coach.netlify.app))
 
 ## Features
 
