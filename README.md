@@ -4,6 +4,35 @@ An interactive 3D Rubik's Cube with a solver-backed AI coach that helps users so
 
 The cube can be manipulated directly, scrambled, solved, and reset. Solution steps can also be played back on the 3D cube, so users can actually see each move being performed.
 
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPO_URL
+cd YOUR_PROJECT_FOLDER
+npm i
+```
+### 2. Create .env
+
+Create a .env file 
+
+### 3. Get a GEMINI KEY
+
+Create a GEMINI API KEY on https://aistudio.google.com/api-keys
+
+Place the key in the .env file
+
+```
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### 4. Start the project
+
+```
+npm run dev
+```
+
 ## Live Demo
 
 🔗 [Try the Rubik's Cube AI Coach](https://rubix-cube-ai-coach.netlify.app/)
